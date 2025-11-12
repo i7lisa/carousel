@@ -79,9 +79,9 @@ header nav a{
 
 }
 .carousel .list .item img{
-    width: 50%;
+    width: 70%;
     position: absolute;
-    right: 0;
+    right: -27%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -173,16 +173,6 @@ header nav a{
     font-size: large;
     font-weight: bold;
     border: 1px solid #555;
-}
-.arrows #back{
-    font-family: Poppins;
-    font-weight: 500;
-    border: none;
-    border-bottom: 1px solid #555;
-    letter-spacing: 3px;
-    background-color: transparent;
-    opacity: 0;
-    pointer-events: none;
 }
 .carousel .list .item .intro .title{
     font-size: 2em;
@@ -289,15 +279,15 @@ header nav a{
     animation: positionItem3 0.9s ease-in-out 1 forwards;
 }
 
-.carousel::before{
+.carousel::after{
     width: 500px;
     height: 300px;
     content: '';
     background-image: linear-gradient(
-        45deg, #000000, #000000
+        45deg, #ff000074, #ff000074
     );
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     border-radius: 80% 40%;
     filter: blur(150px);
     top: 50%;
